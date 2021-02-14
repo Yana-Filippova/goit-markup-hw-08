@@ -1,0 +1,63 @@
+.body {
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  font-style: normal;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $title-text-color;
+  font-weight: $title-font-weight;
+  font-size: $title-font-size;
+  line-height: 1.17;
+  text-align: center;
+}
+
+body.modal-open {
+  overflow: hidden;
+}

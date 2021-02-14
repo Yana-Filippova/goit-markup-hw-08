@@ -1,0 +1,104 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 90px;
+  }
+
+  overflow-y: scroll;
+
+  opacity: 1;
+  background-color: $overlay-backdrop-color;
+
+  @include transit(opacity);
+}
+
+.backdrop.is-hidden {
+  /* visibility: hidden; */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -150%);
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 4px;
+
+  background-color: $main-bg-color;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  left: 50%;
+  transform: translate(-50%, 0);
+  @include transit(transform);
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    width: 528px;
+    max-width: 528px;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    @include transit(transform);
+  }
+}
+.modal__btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  @include centeredFlex();
+  
+  padding: 0;
+  height: 30px;
+  width: 30px;
+
+  color: $main-black-color;
+
+  @include bordered($border-modal-btn);
+  border-radius: 50%;
+  background-color: $main-bg-color;
+  /* outline: transparent; */
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.modal__contact-data {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-weight: $title-font-weight;
+  font-size: $modal-contact-data-font-size;
+  line-height: 1.15;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.modal__icon-close {
+  fill: currentColor;
+}

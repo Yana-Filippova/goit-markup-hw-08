@@ -1,0 +1,59 @@
+.activities {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
+
+.activities__list {
+  display: flex;
+}
+
+.activities__item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.activities__title {
+  margin-bottom: 50px;
+
+  font-family: $main-font-family;
+}
+
+.activities__thumb {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.activities__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 54px;
+  padding-right: 54px;
+  background-color: $overlay-text-color;
+}
+
+.activities__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  color: $main-bg-color;
+
+  font-family: $main-font-family;
+  font-weight: $title-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,134 @@
+.contact-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.contact-list__item {
+  &:not(:last-child) {
+    @media screen and (max-width: $max-mobile) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+      margin-top: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 30px;
+    }
+  }
+
+  &:last-child {
+    @media screen and (max-width: $max-mobile) {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.contact-list__link {
+  display: flex;
+  align-items: center;
+
+  color: $main-text-color;
+
+  font-family: $main-font-family;
+  font-weight: $sec-font-weight;
+  font-size: $logo-font-size;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  @include transit(color);
+
+  &--tel {
+    @media screen and (max-width: $tablet) {
+      color: $accent-color;
+
+      font-size: $contact-font-size;
+      line-height: 1.18;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: $modal-form-text-font-size;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: $main-font-size;
+    line-height: 1.14;
+  }
+}
+
+.contact-list__icon {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}
+
+.page-header__social {
+  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__social-item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid $border-input-color;
+}
+
+.page-header__social-link {
+  align-items: center;
+
+  color: $accent-color;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: $sec-font-weight;
+  font-size: $example-title-details-font-size;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+.main-nav__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 50px 0 0;
+  }
+}
+
+.main-nav__item:last-child {
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: auto;
+  }
+}

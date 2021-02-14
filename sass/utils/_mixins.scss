@@ -1,0 +1,21 @@
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transit($property...) {
+  transition-property: $property;
+  transition-duration: $transition-time;
+  transition-timing-function: $timing-fn;
+}
+
+@mixin bordered($color) {
+  border: 1px solid $color;
+}
+
+@mixin negativeMargin() {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}

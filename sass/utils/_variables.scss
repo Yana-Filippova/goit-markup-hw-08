@@ -1,0 +1,64 @@
+//Colors
+$main-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196f3;
+$main-white-color: #ffffff;
+$main-black-color: #000000;
+$add-footer-color: rgba(255, 255, 255, 0.6);
+$main-bg-color: #ffffff;
+$sec-bg-color: #2f303a;
+$add-bg-color: #f5f4fa;
+$border-portfolio-color: #ececec;
+$bg-overlay-transparent-color: rgba(47, 48, 58, 0.4);
+$hero-bg-color: #2f303a;
+$icon-color: #afb1b8;
+$social-link-bg-color: rgba(255, 255, 255, 0.1);
+$overlay-text-color: rgba(47, 48, 58, 0.8);
+$overlay-bg-color: rgba(33, 150, 243, 0.9);
+$overlay-backdrop-color: rgba(0, 0, 0, 0.2);
+$border-modal-btn: rgba(0, 0, 0, 0.1);
+$border-email-color: rgba(255, 255, 255, 0.3);
+$box-shadow-color: rgba(0, 0, 0, 0.15);
+$border-input-color: rgba(33, 33, 33, 0.2);
+$modal-placeholder-text-color: rgba(117, 117, 117, 0.5);
+$input-email-drop-shadow: rgba(0, 0, 0, 0.15);
+$client-drop-shadow: rgba(0, 0, 0, 0.25);
+
+//Transition
+$timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-time: 250ms;
+
+//Border radius
+$border-radius-button: 4px;
+
+//Font-family
+$main-font-family: Roboto, sans-serif;
+$logo-font-family: Raleway, sans-serif;
+
+//Font-size
+$modal-form-text-font-size: 12px;
+$main-font-size: 14px;
+$sec-font-size: 16px;
+$example-title-details-font-size: 18px;
+$modal-contact-data-font-size: 20px;
+$logo-font-size: 24px;
+$desktop-logo-font-size: 26px;
+$mobile-hero-title-font-size: 26px;
+$client-title-font-size: 28px;
+$contact-font-size: 34px;
+$title-font-size: 36px;
+$main-nav-font-size: 40px;
+$hero-title-font-size: 44px;
+
+//Font-weight
+$main-font-weight: 400;
+$sec-font-weight: 500;
+$title-font-weight: 700;
+$hero-title-font-weight: 900;
+
+//Breakpoints
+$mobile: 480px;
+$max-mobile: 767px;
+$tablet: 768px;
+$max-tablet: 1199px;
+$desktop: 1200px;

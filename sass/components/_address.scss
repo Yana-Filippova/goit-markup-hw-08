@@ -1,0 +1,29 @@
+.address {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  color: $main-white-color;
+
+  font-style: normal;
+  font-family: $main-font-family;
+  font-weight: $main-font-weight;
+  font-size: $main-font-size;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__contacts-item:not(:last-child) {
+  margin-bottom: 8px;
+
+  font-family: $main-font-family;
+}
+
+.address__contacts-link {
+  display: block;
+
+  color: $add-footer-color;
+  
+  font-style: normal;
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+}
