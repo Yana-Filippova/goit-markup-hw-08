@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACtB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CACpB;;AAED,AAAA,kCAAkC,CAAC;EACjC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CACpB;;AAED,AAAA,2BAA2B,CAAC;EAC1B,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,IAAI;CAClB",
-    "sources": [
-        "../sass/layout-copy/copy_page-header.scss"
-    ],
-    "names": [],
-    "file": "copy_page-header.css"
-}
