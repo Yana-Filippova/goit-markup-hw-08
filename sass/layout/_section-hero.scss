@@ -26,7 +26,7 @@
         $bg-overlay-transparent-color,
         $bg-overlay-transparent-color
       ),
-      url(/images/header/Header_mobile.jpg);
+      url(../images/header/Header_mobile.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -36,7 +36,7 @@
           $bg-overlay-transparent-color,
           $bg-overlay-transparent-color
         ),
-        url(/images/header/Header_mobile@2x.jpg);
+        url(../images/header/Header_mobile@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -47,7 +47,7 @@
           $bg-overlay-transparent-color,
           $bg-overlay-transparent-color
         ),
-        url(/images/header/Header_mobile@3x.jpg);
+        url(../images/header/Header_mobile@3x.jpg);
     }
   }
 
@@ -60,7 +60,7 @@
         $bg-overlay-transparent-color,
         $bg-overlay-transparent-color
       ),
-      url(/images/header/Header_tablet.jpg);
+      url(../images/header/Header_tablet.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -70,7 +70,7 @@
           $bg-overlay-transparent-color,
           $bg-overlay-transparent-color
         ),
-        url(/images/header/Header_tablet@2x.jpg);
+        url(../images/header/Header_tablet@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -81,7 +81,7 @@
           $bg-overlay-transparent-color,
           $bg-overlay-transparent-color
         ),
-        url(/images/header/Header_tablet@3x.jpg);
+        url(../images/header/Header_tablet@3x.jpg);
     }
   }
 
@@ -94,7 +94,7 @@
         $bg-overlay-transparent-color,
         $bg-overlay-transparent-color
       ),
-      url(/images/header/Header_desktop.jpg);
+      url(../images/header/Header_desktop.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -104,7 +104,7 @@
           $bg-overlay-transparent-color,
           $bg-overlay-transparent-color $bg-overlay-transparent-color
         ),
-        url(/images/header/Header_desktop@2x.jpg);
+        url(../images/header/Header_desktop@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -115,7 +115,7 @@
           $bg-overlay-transparent-color,
           $bg-overlay-transparent-color
         ),
-        url(/images/header/Header_desktop@3x.jpg);
+        url(../images/header/Header_desktop@3x.jpg);
     }
   }
 }
@@ -131,7 +131,7 @@
   margin-bottom: 0;
 
   color: $main-white-color;
-  
+
   font-family: $main-font-family;
   font-weight: $hero-title-font-weight;
   font-size: $mobile-hero-title-font-size;
